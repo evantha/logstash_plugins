@@ -9,12 +9,12 @@ class LogStash::Filters::IndexBucket < LogStash::Filters::Base
   # configure this filter from your Logstash config.
   #
   # filter {
-  #    {
-  #		date_field => "%{raisedTimestamp}"
-  #		index_field => "index_name"
-  #		gap => 3
-  #		index_value => "metrics-"
-  #   }
+  #    index_bucket {
+  #			date_field => "%{raisedTimestamp}"
+  #			index_field => "index_name"
+  #			gap => 3
+  #			index_value => "metrics-"
+  #  	 }
   # }
   #
   # If the date_field is provided, date value represented by that field is 
