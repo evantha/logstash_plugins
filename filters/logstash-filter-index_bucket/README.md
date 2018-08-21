@@ -7,7 +7,7 @@ In logstash config file
 ```sh
 filter {
       index_bucket {
-  			date_field => "%{raisedTimestamp}"
+  			date_field => "%{date_field}"
   			index_field => "index_name"
   			gap => 3
   			index_value => "metrics-"
