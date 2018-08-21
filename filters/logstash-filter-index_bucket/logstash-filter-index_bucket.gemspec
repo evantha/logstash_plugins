@@ -1,11 +1,9 @@
 Gem::Specification.new do |s|
-  s.name          = 'logstash-filter-timestamp_quartered'
+  s.name          = 'logstash-filter-index_bucket'
   s.version       = '0.1.0'
   s.licenses      = 'Nonstandard'
-  s.summary       = 'short summary'
-  s.description   = 'longer description'
-  s.authors       = 'your_username'
-  s.email         = 'your_username@example.com'
+  s.summary       = 'index field is bucketed based on the date'
+  s.authors       = 'Evantha'
 
   # Files
   s.files = Dir['lib/**/*','spec/**/*','vendor/**/*','*.gemspec','*.md','CONTRIBUTORS','Gemfile','LICENSE','NOTICE.TXT']

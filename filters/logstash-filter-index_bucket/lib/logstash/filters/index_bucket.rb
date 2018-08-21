@@ -4,7 +4,7 @@ require "logstash/namespace"
 require "date"
 
 # This filter will decide the index name based on the date and the gap.
-class LogStash::Filters::TimestampQuartered < LogStash::Filters::Base
+class LogStash::Filters::IndexBucket < LogStash::Filters::Base
 
   # configure this filter from your Logstash config.
   #
@@ -22,7 +22,7 @@ class LogStash::Filters::TimestampQuartered < LogStash::Filters::Base
   # 
   #
   #
-  config_name "timestamp_quartered"
+  config_name "index_bucket"
   
   # a datetime field of the event
   config :date_field, :validate => :string, :required => false
@@ -70,5 +70,4 @@ class LogStash::Filters::TimestampQuartered < LogStash::Filters::Base
 	
 	return quarter
   end
-  
-end # class LogStash::Filters::TimestampQuartered
+end # class LogStash::Filters::IndexBucket

@@ -1,12 +1,12 @@
 # encoding: utf-8
 require_relative '../spec_helper'
-require "logstash/filters/timestamp_quartered"
+require "logstash/filters/index_bucket"
 
-describe LogStash::Filters::TimestampQuartered do
+describe LogStash::Filters::IndexBucket do
   describe "Set to Hello World" do
     let(:config) do <<-CONFIG
       filter {
-        timestamp_quartered {
+        index_bucket {
           message => "Hello World"
         }
       }
