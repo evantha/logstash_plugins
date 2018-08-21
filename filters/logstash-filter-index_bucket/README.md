@@ -3,8 +3,8 @@
 This filter will decide the index name based on the date and the gap.
 
 ## Configuration
-In logstash config file,
-
+In logstash config file
+```sh
 filter {
       index_bucket {
   			date_field => "%{raisedTimestamp}"
@@ -13,6 +13,7 @@ filter {
   			index_value => "metrics-"
     	 }
    }
+```
 
 ## Build your plugin gem
 ```sh
