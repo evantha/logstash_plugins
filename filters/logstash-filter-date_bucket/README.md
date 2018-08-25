@@ -15,10 +15,10 @@ filter {
 
 ## Build your plugin gem
 ```sh
-gem build logstash-filter-timestamp_quartered.gemspec
+gem build logstash-filter-date-bucket.gemspec
 ```
 
 ## Install the plugin from the Logstash home
 ```sh
-bin/logstash-plugin install /your/local/plugin/logstash-filter-timestamp_quartered-0.1.0.gem
+bin/logstash-plugin install /your/local/plugin/logstash-filter-date-bucket-0.1.0.gem
 ```
